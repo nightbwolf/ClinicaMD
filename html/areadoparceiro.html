@@ -17,30 +17,45 @@
     </header>
 
     <body class="conteudo">
-        <br><br>
+
 
         <style>
             table, th, td{
             border: 1px solid black;
             }
         </style>
+        <h4 class="tbl_cadastros"><strong>clientes cadastrados</strong></h4>
         <table style="width: 100%" >
             <tr>
                 <td>Nome</td>
                 <td>contato</td>
                 <td>email</td>
+                <td>data</td>
             </tr>
             <tr>
                 <td>willy wonka<!--adicionar coisas na planilha por meio de interatividade do javaScript--></td>
                 <td>98 91012-2122</td>
                 <td>exemplo@ameil.com</td>
-            </tr>
-            
-            
-           
-            
+                <td>30/10/2025<!--tem que ser colocado com o jS.--></td>
+            </tr>            
         </table>
         
+        <div class="cadastroDeCliente">
+            <h4>Área de cadastro</h4>
+            <div>
+                <label for="nome">Nome: </label>
+                <input type="text" id="nome"><br>
+                <label for="contato">Numero de telefone:</label>
+                <input type="tel" maxlength="11" id="contato"><br>
+                <label for="email">Email</label>
+                <input type="text" id="email"><br>
+                <label for="data">Data de atendimento</label>
+                <input type="date" id="data">
+            </div>
+            <br><br>
+            <button id="limpar">limpar</button>
+            <button id="salvar">salvar</button>
+        </div>    
 
     </body>
 

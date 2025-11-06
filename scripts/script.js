@@ -14,7 +14,7 @@ function validarCampos(){
     return true;
 }
 //objeto de cadastro declarado fora do if para recuperar dados para outras páginas
-let cadastro{};
+let cadastro = {};
 
 //evento de envio do formulário
 form.addEventListener("submit", (event)=>{
@@ -33,7 +33,7 @@ form.addEventListener("submit", (event)=>{
     console.log("cadastro realizado com sucesso!");
     console.log(cadastro);
 
-    let listaCadastros = JSON.parse(localStorage("cadastrosClientes"))||[];
+    let listaCadastros = JSON.parse(localStorage.getItem("cadastrosClientes"))||[];
 
     listaCadastros.push(cadastro);
 
@@ -55,7 +55,7 @@ salvarBtn.addEventListener("click", () =>{
     cadastro.contato= contatoInput.value;
     cadastro.data = dataInput.value;
     
-    if (cadastro.nome && cadastroe.email){
+    if (cadastro.nome && cadastro.email){
         console.log("cadastro salvo com sucesso!");
         console.log(cadastro);
     }

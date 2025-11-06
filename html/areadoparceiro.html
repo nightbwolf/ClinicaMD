@@ -1,72 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8"><!--garante a funcionalidade de caracteres especiais-->
-        <meta name="viewport" content="width=device-width,initial-scale=1"> <!--melhora a aparência em telefone-->
-        <title>Área do Parceiro</title> 
-        <link rel="stylesheet" href="../css/style.css">
-        <script src="../scripts/script.js" defer></script>
-    </head>
-
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Área do Parceiro - Clínica M&D</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../scripts/parceiro.js" defer></script>
+</head>
+<body>
     <header class="cabecalho">
         <h1 class="titulo"><strong>Clínica M&D</strong></h1>
         <nav class="navegacao">
             <ul>
-                <li><a href="index.html/.">Início</a></li>
-
+                <li><a href="index.html">Início</a></li>
                 <li><a href="Sobre-Nos.html">Sobre Nós</a></li>
-
-                <li><a href="cadastro.html" >Cadastro</a></li>
-                
+                <li><a href="cadastro.html">Cadastro</a></li>
                 <li><a href="areadoparceiro.html" class="ativo">Área do Parceiro</a></li>
-                
             </ul>
         </nav>
     </header>
 
-    <body class="conteudo">
-
-
-        <style>
-            table, th, td{
-            border: 1px solid black;
-            }
-        </style>
-        <h4 class="tbl_cadastros"><strong>clientes cadastrados</strong></h4>
-        <table id="tabelaClientes" >
+    <main class="conteudo">
+        <h2>Clientes Cadastrados</h2>
+        <table id="tabelaClientes">
             <thead>
                 <tr>
-                <td>Nome</td>
-                <td>contato</td>
-                <td>email</td>
-                <td>data</td>
+                    <th>Nome</th>
+                    <th>Contato</th>
+                    <th>Email</th>
+                    <th>Data</th>
                 </tr>
             </thead>
             <tbody>
-
-            </tbody>           
+                <!-- Linhas serão preenchidas pelo JS -->
+            </tbody>
         </table>
-        
-        <div class="cadastroDeCliente">
-            <h4>Área de cadastro</h4>
-            <div>
-                <label for="nome">Nome: </label>
-                <input type="text" id="nome"><br>
-                <label for="contato">Numero de telefone:</label>
-                <input type="tel" maxlength="11" id="contato"><br>
-                <label for="email">Email</label>
-                <input type="text" id="email"><br>
-                <label for="data">Data de atendimento</label>
-                <input type="date" id="data">
-            </div>
-            <br><br>
-            <button id="limpar">limpar</button>
-            <button id="salvar">salvar</button>
-        </div>    
+    </main>
 
-    </body>
-
-    <footer>
-
+    <footer class="rodape">
+        <p>© 2025 Clínica M&D - Todos os direitos reservados</p>
     </footer>
+</body>
 </html>

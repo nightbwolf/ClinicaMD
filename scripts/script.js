@@ -14,7 +14,7 @@ function validarCampos(){
     return true;
 }
 //objeto de cadastro declarado fora do if para recuperar dados para outras páginas
-let cadastro{};
+let cadastro = {};
 
 //evento de envio do formulário
 form.addEventListener("submit", (event)=>{

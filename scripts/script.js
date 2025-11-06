@@ -5,6 +5,9 @@ const contatoInput = document.getElementById("contato");
 const dataInput = document.getElementById("data");
 const form = document.querySelector(".form-cadastro")
 const salvarBtn = document.getElementById("salvar");
+//parte da area do parceiro
+const tabela = document.getElementById("tabelaclients").querySelector("tbody");
+
 //função de validação
 function validarCampos(){
     if(!nomeInput.value||!contatoInput.value||!emailInput.value||!dataInput.value){
@@ -64,3 +67,27 @@ salvarBtn.addEventListener("click", () =>{
 
     }
 });
+
+function preencherTabela(){
+    // limpa tabela antes de preencher
+    tabela.innerHTML = ""
+    
+    //para cada cadastro na lista
+    listaCadastros.forEach(cadastro=>{
+        //cria nova linha
+        const linha = tabela.insertRow();
+        //cria células
+        const celulaNome = linha.insertcell(0);
+        const celulaContato = linha.insertCell(1);
+        const celulaEmail = linha.insertCell(2);
+        const celulaData = linha.insertCell(3);
+        
+        //preenche células com dados do cadastro
+        celulaNome.textContent = cadastro.nome;
+        celulaContato.textContent = cadastro.contato;
+        celulaEmail.textContent = cadastro.email;
+        celulaData.textContent = cadastro.data;
+    });
+}
+
+window.addEventListener("load", preencherTabela);

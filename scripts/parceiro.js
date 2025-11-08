@@ -1,17 +1,20 @@
-// parceiro.js
+document.addEventListener("DOMContentLoaded", () => {
+    // Captura o tbody da tabela
+    const tabela = document.querySelector("#tabelaClientes tbody");
 
-// Captura o tbody da tabela
-const tabelaElement = document.getElementById("tabelaClientes");
-if (tabelaElement) {
-    const tabela = tabelaElement.querySelector("tbody");
+    if (!tabela) {
+        console.error("Tabela não encontrada!");
+        return;
+    }
 
     // Recupera a lista de cadastros do localStorage
-    let listaCadastros = JSON.parse(localStorage.getItem("cadastrosClientes")) || [];
+    const listaCadastros = JSON.parse(localStorage.getItem("cadastrosClientes")) || [];
 
     // Função para preencher a tabela
     function preencherTabela() {
-        tabela.innerHTML = ""; // limpa tabela
-        listaCadastros.forEach(cadastro => {
+        tabela.innerHTML = ""; // limpa a tabela
+
+        listaCadastros.forEach((cadastro) => {
             const linha = tabela.insertRow();
             linha.insertCell(0).textContent = cadastro.nome;
             linha.insertCell(1).textContent = cadastro.contato;
@@ -20,6 +23,6 @@ if (tabelaElement) {
         });
     }
 
-    // Chama a função quando a página carregar
-    window.addEventListener("load", preencherTabela);
-}
+    // Preenche automaticamente ao abrir a página
+    preencherTabela();
+});

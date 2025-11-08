@@ -1,9 +1,48 @@
+document.addEventListener("DOMContentLoaded", ()=>{
+    const form = document.querySelector(".form-cadastro");
+
+    if (!form){
+        console.error("Formulário de cadastro não encontrado!");
+        return;
+    }
+
+    form.addEventListener("submit", (event) =>{
+        event.preventDefault(); //impede o recarregamento da página
+
+        const nome = document.getElementById("nome").value.trim();
+        const contato = document.getElementById("contato").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const data = document.getElementById("data").value;
+
+        if(!nome||!contato||!email||!data){
+            alert("por favor, preencha todos os campos!");
+            return;
+        }
+
+        //cria o objeto de cadastro
+        const novoCadastro = {nome, contato, email, data};
+        
+        //recupera lista existente(ou cria uma nova)
+        let listaCadastros = JSON.parse(localStorage.getItem("cadastrosClientes")) || [];
+    
+        listaCadastros.push(novoCadastro);
+
+        localStorage.setItem("cadastrosClientes", JSON.stringify(listaCadastros));
+
+        form.reset();
+        
+        alert("cadastro salvo com sucesso!")
+    });
+
+});
+
+/*
 //captura dos elementos no html
 const nomeInput = document.getElementById("nome");
 const emailInput = document.getElementById("email");
 const contatoInput = document.getElementById("contato");
 const dataInput = document.getElementById("data");
-const form = document.querySelector(".form-cadastro")
+const form = document.querySelector(".form-cadastro");
 const salvarBtn = document.getElementById("salvar");
 
 
@@ -35,7 +74,7 @@ form.addEventListener("submit", (event)=>{
     console.log("cadastro realizado com sucesso!");
     console.log(cadastro);
 
-    let listaCadastros = JSON.parse(localStorage.getItem("cadastrosClientes"))||[];
+    let listaCadastros = JSON.parse(localStorage.getItem("cadastrosCliente"))||[];
 
     listaCadastros.push(cadastro);
 
@@ -65,4 +104,4 @@ salvarBtn.addEventListener("click", () =>{
         console.error("erro: preencha todos os campos obrigatórios!");
 
     }
-});
+});*/

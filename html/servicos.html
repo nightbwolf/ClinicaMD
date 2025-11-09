@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>M&D — Escolha de Serviços</title>
+</head>
+<body>
+  <header>
+    <h1>Clínica Odontológica — Escolha de Serviços</h1>
+    <p>Por favor, selecione os serviços desejados abaixo.</p>
+  </header>
+
+  <section aria-labelledby="servicos-title">
+    <h2 id="servicos-title">Serviços Disponíveis</h2>
+
+    <form action="/agendar" method="post">
+      <p>Marque um ou mais procedimentos:</p>
+
+      <input type="checkbox" id="clareamento" name="servico" value="clareamento">
+      <label for="clareamento">Clareamento dental</label>
+      <br>
+
+      <input type="checkbox" id="harmonizacao" name="servico" value="harmonizacao">
+      <label for="harmonizacao">Harmonização Orofacial</label>
+      <br>
+
+      <input type="checkbox" id="ortodontia" name="servico" value="ortodontia">
+      <label for="ortodontia">Ortodontia</label>
+      <br>
+
+      <input type="checkbox" id="endodontia" name="servico" value="endodontia">
+      <label for="endodontia">Endodontia</label>
+      <br>
+
+      <input type="checkbox" id="implantes" name="servico" value="implantes">
+      <label for="implantes">Implantes Dentários</label>
+      <br>
+
+      <input type="checkbox" id="laser" name="servico" value="laser">
+      <label for="laser">Laserterapia</label>
+      <br>
+
+      <p>
+        <button type="submit">Enviar solicitação</button>
+        <button type="reset">Limpar</button>
+      </p>
+    </form>
+  </section>
+
+  <section id="pos-cadastro" aria-labelledby="bemvindo-title">
+    <h2 id="bemvindo-title">Bem-vindo(a) à M&amp;D — Clínica Odontológica</h2>
+    <p>
+      Obrigado pelo cadastro! Na M&amp;D priorizamos conforto, segurança e excelência nos
+      tratamentos. Você pode retornar a esta página para agendar ou alterar serviços.
+    </p>
+
+    <h3>Resumo rápido dos serviços</h3>
+    <ul>
+      <li><strong>Clareamento dental</strong> — estética do sorriso.</li>
+      <li><strong>Harmonização Orofacial</strong> — tratamentos estéticos faciais integrados.</li>
+      <li><strong>Ortodontia</strong> — alinhamento dentário com aparelhos fixos ou alinhadores.</li>
+      <li><strong>Endodontia</strong> — tratamento de canal e reabilitação pulpar.</li>
+      <li><strong>Implantes Dentários</strong> — reposição fixa de dentes ausentes.</li>
+      <li><strong>Laserterapia</strong> — auxiliar na cicatrização e redução de dor/inflamação.</li>
+    </ul>
+
+  </section>
+
+</body>
+</html>

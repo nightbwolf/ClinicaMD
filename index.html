@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Clinica M&D</title>
-    </head>
-   
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinica M&D</title>
+</head>
+   <header class="cabecalho">
+        <h1 class="titulo"><strong>Clínica M&D</strong></h1>
+        <nav class="navegacao">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+
+                <li><a href="/html/Sobre-Nos.html">Sobre Nós</a></li>
+
+                <li><a href="/html/cadastro.html" class="ativo">Cadastro</a></li>
+                
+                <li><a href="/html/login.html">Área do Parceiro</a></li>
+                
+            </ul>
+        </nav>
+    </header>
     <body> 
-        <!--commeço do header-->
-        <header class="cabecalho">
-            <div class="cor-fundo">
-                <nav class="navegacao">
-                    <Div class="logo">
-                        Clinica M&D
-                    </Div>
-                    <ul>
-                        <li><a href="index.html" class="ativo">Início</a></li>
-
-                        <li><a href="/html/Sobre-Nos.html">Sobre Nós</a></li>
-                        
-                        <li><a href="/html/login.html">Área do Parceiro</a></li>
-
-                        <li><a href="/html/cadastro.html"><button class="btn-gradient">cadastrar</button></a></li>
-                        
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <!--fim do header-->
-
          <section class="secao">
           <h2>Início</h2>
           <h3>Bem-vindo(a) à M & D!</h3>
@@ -78,109 +69,151 @@
             <br><br>
         </section>
 
-        <section class="secao">
-            <h2>Clareamento Dental</h2>
-            <br>
-            <p>
-                O clareamento dental é a solução para quem deseja um sorriso mais branco, saudável e 
-                luminoso.
-                <br><br>
-                Com técnicas modernas e seguras, é possível remover manchas e devolver a beleza natural 
-                dos dentes, de forma rápida e confortável.
-                <br><br>
-                O tratamento valoriza seu sorriso, aumenta a autoestima e traz mais confiança para 
-                sorrir em qualquer ocasião.
-            </p>
-            <br><br>
-        </section>
+    <!-- Seção Especialidades -->
+    <section id="especialidades" class="especialidades">
+        <div class="container">
+            <h2 class="section-title">Nossas Especialidades</h2>
+            <div class="especialidades-grid">
+                <div class="especialidade-card">
+                    <h3>Clareamento Dental</h3>
+                </div>
+                <div class="especialidade-card">
+                    <h3>Harmonização Orofacial</h3>
+                </div>
+                <div class="especialidade-card">
+                    <h3>Ortodontia</h3>
+                </div>
+                <div class="especialidade-card">
+                    <h3>Endodontia</h3>
+                </div>
+                <div class="especialidade-card">
+                    <h3>Implantes Dentários</h3>
+                </div>
+                <div class="especialidade-card">
+                    <h3>Laserterapia</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="secao">
-            <h2>Harmonização Orofacial</h2>
-            <br>
-            <p>
-                A harmonização orofacial combina técnicas estéticas para realçar a beleza natural do 
-                rosto e do sorriso, equilibrando proporções, contornos e expressão facial.
-                <br><br>
-                Procedimentos como preenchimento, toxina botulínica e tratamentos faciais ajudam a 
-                rejuvenescer, suavizar marcas e valorizar traços, proporcionando um resultado natural e 
-                harmônico.
-            </p>
-            <br>
-            <p>
-                Com cuidados personalizados e atenção à saúde, a harmonização orofacial eleva a 
-                autoestima e a confiança de cada paciente.
-            </p>
-            <br><br>
-        </section>
+    <!-- Seção Sobre Nós -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="sobre-content">
+                <p>
+                    Aqui na Clínica M&D, acreditamos que um sorriso saudável transforma vidas. 
+                    Nossa clínica odontológica foi criada com o propósito de oferecer um atendimento completo, humanizado e de excelência, aliando tecnologia de ponta, profissionais qualificados e um ambiente acolhedor.
+                    Cada detalhe foi pensado para que você se sinta confortável e confiante em cada etapa do seu tratamento. Trabalhamos com todas as especialidades da odontologia, desde a prevenção e estética até procedimentos mais complexos, sempre com foco no bem-estar e na satisfação de cada paciente. Mais do que cuidar de sorrisos, cuidamos de pessoas. Venha nos conhecer e descubra uma nova forma de sorrir com confiança!
+                </p>
+            </div>
+        </div>
+    </section>
 
-        <section class="secao">
-            <h2>Ortodontia</h2>
-            <br>
-            <p>
-                Acreditamos que um sorriso alinhado é sinônimo de saúde e confiança.
-                Somos especializados em ortodontia, oferecendo tratamentos modernos e personalizados — 
-                como alinhadores invisíveis e aparelhos autoligáveis — para transformar sorrisos com 
-                conforto e precisão.
-            </p>
-            <br>
-            <p>
-                Cuidar do seu sorriso é nossa maior satisfação.
-            </p>
-            <br><br>
-        </section>
+    <!-- Seção Procedimentos -->
+    <section id="procedimentos" class="procedimentos">
+        <div class="container">
+            <h2 class="section-title">Nossos Procedimentos</h2>
+            <div class="procedimentos-grid">
+                <div class="procedimento-card">
+                    <h3>Clareamento Dental</h3>
+                    <p>O clareamento dental é a solução para quem deseja um sorriso mais branco, saudável e luminoso.
+                    Com técnicas modernas e seguras, é possível remover manchas e devolver a beleza natural
+                    O tratamento valoriza seu sorriso, aumenta a autoestima e traz mais confiança para sorrir em qualquer ocasião.</p>
+                </div>
+                <div class="procedimento-card">
+                    <h3>Harmonização Orofacial</h3>
+                    <p>A harmonização orofacial combina técnicas estéticas para realçar a beleza natural do rosto e do sorriso, equilibrando proporções, contornos e expressão facial. Procedimentos como preenchimento, toxina botulínica e tratamentos faciais ajudam a rejuvenescer, suavizar marcas e valorizar traços, proporcionando um resultado natural e harmônico. Com cuidados personalizados e atenção à saúde, a harmonização orofacialeleva a autoestima e a confiança de cada paciente.</p>
+                </div>
+                <div class="procedimento-card">
+                    <h3>Ortodontia</h3>
+                    <p>Acreditamos que um sorriso alinhado é sinônimo de saúde e confiança. Somos especializados em ortodontia, oferecendo tratamentos modernos e personalizados como alinhadores invisíveis e aparelhos autoligáveis para transformar sorrisos com conforto e precisão. Cuidar do seu sorriso é nossa maior satisfação.</p>
+                </div>
+                <div class="procedimento-card">
+                    <h3>Endodontia</h3>
+                    <p>A endodontia é a especialidade responsável por tratar a parte interna dos dentes, removendo inflamações e infecções do canal radicular. O tratamento endodôntico conhecido como tratamento de canal tem como objetivo preservar o dente natural, eliminando a dor e restaurando a saúde bucal. Com o uso de técnicas modernas e equipamentos precisos, é possível realizar o procedimento de forma segura, rápida e confortável, garantindo resultados duradouros e um sorriso livre de incômodos.</p>
+                </div>
+                <div class="procedimento-card">
+                    <h3>Implantes Dentários</h3>
+                    <p>Recupere seu sorriso com implantes! Os implantes dentários devolvem dentes perdidos com aparência natural, estabilidade e conforto. Com técnicas modernas e planejamento preciso, você pode mastigar, sorrir e falar com confiança novamente. Agende sua avaliação e transforme seu sorriso!</p>
+                </div>
+                <div class="procedimento-card">
+                    <h3>Laserterapia</h3>
+                    <p>A laserterapia é uma técnica moderna que utiliza luz para promover cicatrização, reduzir inflamações e aliviar dores na boca e nos tecidos bucais. O tratamento é rápido, seguro e indolor, sendo indicado para diversas situações, como pós-operatórios, lesões bucais e sensibilidade dentária. Com a laserterapia, é possível acelerar a recuperação e melhorar o conforto do paciente, tornando os cuidados odontológicos mais eficazes e agradáveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section class="secao">
-            <h2>Endodontia</h2>
-            <br>
-            <p>
-                A endodontia é a especialidade responsável por tratar a parte interna dos dentes, 
-                removendo inflamações e infecções do canal radicular.
-                <br><br>
-                O tratamento endodôntico — conhecido como tratamento de canal — tem como objetivo 
-                preservar o dente natural, eliminando a dor e restaurando a saúde bucal.
-            </p>
-            <br>
-            <p>
-                Com o uso de técnicas modernas e equipamentos precisos, é possível realizar o 
-                procedimento de forma segura, rápida e confortável, garantindo resultados duradouros 
-                e um sorriso livre de incômodos.
-            </p>
-            <br><br>
-        </section>
+    <!-- Seção Contatos -->
+    <section id="contatos" class="contatos">
+        <div class="container">
+            <h2 class="section-title">Contatos</h2>
+            <div class="contatos-content">
+                <div class="contato-info">
+                    <h3>Dra. Vanessa Marques</h3>
+                    <p>(98) 98000-6000</p>
+                </div>
+                <div class="contato-info">
+                    <h3>Dr. Carlos Alberto</h3>
+                    <p>(98) 91555-7744</p>
+                </div>
+            </div>
+            <div class="agendamento">
+                <h3>Agende sua consulta</h3>
+                <form class="agendamento-form">
+                    <input type="text" placeholder="Seu nome" required>
+                    <input type="tel" placeholder="Seu telefone" required>
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <select required>
+                        <option value="" disabled selected>Selecione um procedimento</option>
+                        <option value="clareamento">Clareamento Dental</option>
+                        <option value="harmonizacao">Harmonização Orofacial</option>
+                        <option value="ortodontia">Ortodontia</option>
+                        <option value="endodontia">Endodontia</option>
+                        <option value="implantes">Implantes Dentários</option>
+                        <option value="laserterapia">Laserterapia</option>
+                    </select>
+                    <textarea placeholder="Mensagem adicional (opcional)"></textarea>
+                    <button type="submit">Solicitar Agendamento</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-        <section class="secao">
-            <h2>Implantes Dentários</h2>
-            <br>
-            <p>
-                Recupere seu sorriso com implantes!
-            </p>
-            <br>
-            <p>
-                Os implantes dentários devolvem dentes perdidos com aparência natural, estabilidade e 
-                conforto.
-                <br><br>
-                Com técnicas modernas e planejamento preciso, você pode mastigar, sorrir e falar com 
-                confiança novamente.
-                <br><br>
-                Agende sua avaliação e transforme seu sorriso!
-            </p>
-            <br><br>
-        </section>
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Clínica M&D</h3>
+                    <p>Cuidando do seu sorriso com excelência e carinho.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#procedimentos">Procedimentos</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Clínica M&D. Todos os direitos reservados.</p>
+                <p>Estácio 2025</p>
+            </div>
+        </div>
+    </footer>
 
-        <section class="secao">
-            <h2>Laserterapia</h2>
-            <br>
-            <p>
-                A laserterapia é uma técnica moderna que utiliza luz para promover cicatrização, 
-                reduzir inflamações e aliviar dores na boca e nos tecidos bucais.
-                <br><br>
-                O tratamento é rápido, seguro e indolor, sendo indicado para diversas situações, 
-                como pós-operatórios, lesões bucais e sensibilidade dentária.
-                <br><br>
-                Com a laserterapia, é possível acelerar a recuperação e melhorar o conforto do paciente, 
-                tornando os cuidados odontológicos mais eficazes e agradáveis.
-            </p>
-            <br><br>
-        </section>
-    </body>
+    <script src="scripts/mobile.js"></script>
+</body>
 </html>

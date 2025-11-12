@@ -58,7 +58,7 @@ document.getElementById("formLogin").addEventListener("submit", function(event){
 
                 // redireciona para a área do parceiro
                 setTimeout(() => {
-                    window.location.href = "areadoparceiro.html";
+                    window.location.href = "../html/areadoparceiro.html";
                 }, 1000);   
             } else {
                 msg.textContent = "Usuário ou senha incorretos.";

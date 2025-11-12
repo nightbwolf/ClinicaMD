@@ -7,7 +7,14 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+:root{
+    --degrade-btn: linear-gradiente(#fe9611, #ff5c00);
 
+}
+
+.cor-fundo{
+    background-color: #d5bfa3; ;
+} 
 body {
     background-color: #fdfaf7; /* fundo bege claro */
     color: #3e2f24; /* marrom escuro para texto */

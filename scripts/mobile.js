@@ -7,6 +7,21 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 
+//seletor de área do parceiro
+document.getElementById("areaParceiro").addEventListener("click", function(){
+    window.location.href ="../html/parceiro/login.html";
+});
+
+//seletor do auto cadastro
+document.getElementById("autoCadastro").addEventListener("click",function(){
+    window.location.href = "../html/cadastro.html";
+});
+ 
+//seletor página principal
+document.getElementById("inicio").addEventListener("click", function(){
+    window.location.href = "index.html";
+});
+
 // Fechar menu ao clicar em um link
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");

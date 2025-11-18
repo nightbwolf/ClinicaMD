@@ -19,7 +19,7 @@ document.getElementById("autoCadastro").addEventListener("click",function(){
  
 //seletor página principal
 document.getElementById("inicio").addEventListener("click", function(){
-    window.location.href = "index.html";
+    window.location.href = "../index.html";
 });
 
 // Fechar menu ao clicar em um link
